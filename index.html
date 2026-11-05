@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bo Yang</title>
+  <meta name="description" content="Bo Yang, Ph.D. student in the UCLA Mobility Lab. Generative models of human mobility across individual, household, and population levels.">
+  <meta name="author" content="Bo Yang">
+  <meta property="og:title" content="Bo Yang">
+  <meta property="og:description" content="Ph.D. student in the UCLA Mobility Lab. Generative models of human mobility.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theboyang.github.io/">
+  <meta property="og:image" content="https://theboyang.github.io/assets/bo-yang.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="page topbar-inner">
+    <a class="wordmark" href="#">Bo Yang</a>
+    <nav aria-label="Sections">
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="assets/Bo_Yang_CV.pdf">CV</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+    </nav>
+  </div>
+</div>
+
+<main class="page">
+
+  <header class="profile">
+    <img class="photo" src="assets/bo-yang.jpg" alt="Bo Yang" width="640" height="640">
+    <div class="profile-text">
+      <h1>Bo Yang</h1>
+      <p class="role">Ph.D. Student, UCLA Mobility Lab<br>University of California, Los Angeles</p>
+      <p class="links">
+        <a href="mailto:boyang2025@ucla.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=FKWe1d8AAAAJ">Google Scholar</a>
+        <a href="https://github.com/TheBoYang">GitHub</a>
+        <a href="https://www.linkedin.com/in/bo-yang-9138a4408/">LinkedIn</a>
+        <a href="assets/Bo_Yang_CV.pdf">CV</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="bio">
+    <p>
+      I am a Ph.D. student in the UCLA Mobility Lab at the University of California, Los Angeles, advised by
+      Prof. Jiaqi Ma. My research builds generative models of human mobility that stay coherent across levels:
+      the daily activity&ndash;travel patterns of individuals, the coordination within households, and the
+      aggregate movement of entire cities. Recent work includes diffusion models for whole-day activity
+      generation, generation constrained by aggregate statistics, and LLM-based population and mobility synthesis.
+    </p>
+    <p>
+      Previously, I received my Master of Computing in Computer Science from the National University of
+      Singapore and my B.Eng. from Nanjing University.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3 class="group">Conference Papers</h3>
+    <ul class="pubs">
+      <li>
+        <a class="thumb" href="assets/papers/trip-purpose.jpg"><img src="assets/papers/trip-purpose.jpg" alt="Framework overview: data integration, dual-path inference, and Pareto calibration" loading="lazy"></a>
+        <div class="pub-body">
+          <span class="venue-tag">ITSC 2026</span>
+          <p class="title">Uncertainty-Aware Trip Purpose Inference from GPS Trajectories via POI Semantic Zones and Pareto Calibration</p>
+          <p class="authors"><b>Bo Yang*</b>, Haoxuan Ma*, Yifan Liu, Zhiyuan Zhang, Chris Stanford, Morgan Sun, Jiaqi Ma</p>
+          <p class="venue">IEEE International Conference on Intelligent Transportation Systems (ITSC), 2026</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2605.01257">arXiv</a></p>
+        </div>
+      </li>
+      <li>
+        <a class="thumb" href="assets/papers/tourist.jpg"><img src="assets/papers/tourist.jpg" alt="Pipeline: tourist cohort extraction, travel parameter prediction, ward sequence assignment, and LLM activity chain generation" loading="lazy"></a>
+        <div class="pub-body">
+          <span class="venue-tag">ITSC 2026</span>
+          <p class="title">GPS-Enhanced Tourist Mobility Modeling with Seasonal Spatial Priors and LLM-Based Activity Chain Generation</p>
+          <p class="authors">Yifan Liu*, Yanling Sang*, Xishun Liao, Morgan Sun, <b>Bo Yang</b>, Zhiyuan Zhang, Chris Stanford, Haoxuan Ma, Jiaqi Ma</p>
+          <p class="venue">IEEE International Conference on Intelligent Transportation Systems (ITSC), 2026</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2605.29578">arXiv</a></p>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="group">Under Review</h3>
+    <ul class="pubs">
+      <li>
+        <a class="thumb" href="assets/papers/poptraj.jpg"><img src="assets/papers/poptraj.jpg" alt="PopTraj pipeline: census-constrained population synthesis, LLM and CVAE schedule generation, and HEARTH trajectory completion" loading="lazy"></a>
+        <div class="pub-body">
+          <span class="venue-tag">Information Fusion</span>
+          <p class="title">PopTraj: Hierarchical Multi-Source Generation of Household-Coordinated Weekly Activity&ndash;Location Trajectories with Urban Population Synthesis</p>
+          <p class="authors">Haoxuan Ma, Yifan Liu, <b>Bo Yang</b>, Y. Zhang, Chris Stanford, E. Fox, Xishun Liao, Jiaqi Ma</p>
+          <p class="venue">Information Fusion, under review</p>
+          <p class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7484085">SSRN</a></p>
+        </div>
+      </li>
+      <li>
+        <a class="thumb" href="assets/papers/tod.jpg"><img src="assets/papers/tod.jpg" alt="DRL4TOD workflow: planner inputs, computational pipeline, and planner review" loading="lazy"></a>
+        <div class="pub-body">
+          <span class="venue-tag">TR-C</span>
+          <p class="title">Performing Transit-Oriented Development Planning Using Deep Reinforcement Learning</p>
+          <p class="authors"><b>Bo Yang</b>, Yuebing Liang, Zhan Zhao, Fangyi Ding, Yunhan Zheng, Shenhao Wang, Jinhua Zhao</p>
+          <p class="venue">Transportation Research Part C: Emerging Technologies, under review</p>
+        </div>
+      </li>
+    </ul>
+    <p class="note">* Equal contribution</p>
+  </section>
+
+  <section id="experience">
+    <h2>Research Experience</h2>
+    <ul class="entries">
+      <li>
+        <div class="entry-head"><b>UCLA Mobility Lab</b><span>Sep. 2025 &ndash; Present</span></div>
+        <p>Graduate Student Researcher, advised by Prof. Jiaqi Ma</p>
+      </li>
+      <li>
+        <div class="entry-head"><b>MIT&ndash;NEU&ndash;UF Research Program</b><span>May 2024 &ndash; Jun. 2025</span></div>
+        <p>Deep reinforcement learning for transit-oriented development planning, with Prof. Jinhua Zhao and Dr. Yuebing Liang</p>
+      </li>
+      <li>
+        <div class="entry-head"><b>Temasek Laboratories @ NUS</b><span>Jun. 2022 &ndash; Sep. 2022</span></div>
+        <p>Graduate Researcher, approximate nearest-neighbor search for radar-signal retrieval</p>
+      </li>
+      <li>
+        <div class="entry-head"><b>NUS Smart Medical Technology Lab</b><span>Sep. 2021 &ndash; Dec. 2021</span></div>
+        <p>Research Intern, vision-based non-contact vital-signs detection</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="entries">
+      <li>
+        <div class="entry-head"><b>University of California, Los Angeles</b><span>2025 &ndash; Present</span></div>
+        <p>Ph.D. in Civil Engineering</p>
+      </li>
+      <li>
+        <div class="entry-head"><b>National University of Singapore</b><span>2022 &ndash; 2023</span></div>
+        <p>Master of Computing (Computer Science), School of Computing</p>
+      </li>
+      <li>
+        <div class="entry-head"><b>Nanjing University</b><span>2017 &ndash; 2021</span></div>
+        <p>B.Eng. in Industrial Engineering</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Academic Service</h2>
+    <ul class="entries">
+      <li><div class="entry-head"><b>IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</b></div><p>Editorial Coordinator</p></li>
+      <li><div class="entry-head"><b>IEEE ITSS Technical Committee on Trustworthy AI</b></div><p>Student Committee Member</p></li>
+    </ul>
+  </section>
+
+  <footer>Last updated November 2026</footer>
+</main>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector(".theme-toggle");
+    var media = window.matchMedia("(prefers-color-scheme: dark)");
+    function current() { return root.getAttribute("data-theme") || (media.matches ? "dark" : "light"); }
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
